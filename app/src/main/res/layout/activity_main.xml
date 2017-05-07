@@ -10,8 +10,125 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="omrobbie.com.courtcounter.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/viewCenter"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblPointA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team A"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtPointA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10dp"
+            android:text="0"
+            android:textSize="50sp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btnPointA3"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="+3 POINTS"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnPointA2"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="+2 POINTS"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnPointAFree"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="FREE THROW"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/viewCenter"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"/>
+    
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="120sp"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="NEXT"
+        android:background="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/viewCenter"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblPointB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team B"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtPointB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="10dp"
+            android:text="0"
+            android:textSize="50sp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btnPointB3"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="+3 POINTS"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnPointB2"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="+2 POINTS"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnPointBFree"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="FREE THROW"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"/>
+    </LinearLayout>
 </RelativeLayout>
