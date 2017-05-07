@@ -92,10 +92,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         // reset semua angka
-        pointA=pointB=0;
-        setPointA(0);
-        setPointB(0);
+        btnReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pointA=pointB=0;
+                setPointA(0);
+                setPointB(0);
+            }
+        });
     }
 }
