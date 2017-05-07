@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         // deklarasi text penampung hasil perhitungan Team A
         TextView txtPointA = (TextView) findViewById(R.id.txtPointA);
 
-        pointA += value;
+        pointA = (value == 0) ? 0 : pointA + value;
         txtPointA.setText(String.valueOf(pointA));
     }
 
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         // deklarasi text penampung hasil perhitungan Team B
         TextView txtPointB = (TextView) findViewById(R.id.txtPointB);
 
-        pointB += value;
+        pointB = (value == 0) ? 0 : pointB + value;
         txtPointB.setText(String.valueOf(pointB));
     }
 
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // deklarasi tombol next
-        Button btnNext = (Button) findViewById(R.id.btnNext);
+        Button btnReset = (Button) findViewById(R.id.btnReset);
 
         // deklarasi komponen untuk Team A
         Button btnPointA3 = (Button) findViewById(R.id.btnPointA3);
@@ -91,5 +91,11 @@ public class MainActivity extends AppCompatActivity {
                 setPointB(1);
             }
         });
+
+
+        // reset semua angka
+        pointA=pointB=0;
+        setPointA(0);
+        setPointB(0);
     }
 }

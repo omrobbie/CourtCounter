@@ -20,10 +20,10 @@
         android:layout_centerHorizontal="true"/>
 
     <Button
-        android:id="@+id/btnNext"
+        android:id="@+id/btnReset"
         android:layout_width="120sp"
         android:layout_height="wrap_content"
-        android:text="NEXT"
+        android:text="RESET"
         android:background="@color/colorPrimary"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"/>
